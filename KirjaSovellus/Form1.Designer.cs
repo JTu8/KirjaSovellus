@@ -34,8 +34,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tbKirja = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.btnLisaa = new System.Windows.Forms.Button();
+            this.dateLainaus = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -61,7 +61,7 @@
             // 
             this.tbKirjailija.Location = new System.Drawing.Point(115, 75);
             this.tbKirjailija.Name = "tbKirjailija";
-            this.tbKirjailija.Size = new System.Drawing.Size(100, 20);
+            this.tbKirjailija.Size = new System.Drawing.Size(125, 20);
             this.tbKirjailija.TabIndex = 2;
             // 
             // label3
@@ -77,7 +77,7 @@
             // 
             this.tbKirja.Location = new System.Drawing.Point(115, 123);
             this.tbKirja.Name = "tbKirja";
-            this.tbKirja.Size = new System.Drawing.Size(100, 20);
+            this.tbKirja.Size = new System.Drawing.Size(125, 20);
             this.tbKirja.TabIndex = 4;
             // 
             // label4
@@ -89,12 +89,6 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Lainauspäivämäärä";
             // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(34, 195);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 6;
-            // 
             // btnLisaa
             // 
             this.btnLisaa.Location = new System.Drawing.Point(234, 308);
@@ -105,13 +99,20 @@
             this.btnLisaa.UseVisualStyleBackColor = true;
             this.btnLisaa.Click += new System.EventHandler(this.btnLisaa_Click);
             // 
+            // dateLainaus
+            // 
+            this.dateLainaus.Location = new System.Drawing.Point(40, 190);
+            this.dateLainaus.Name = "dateLainaus";
+            this.dateLainaus.Size = new System.Drawing.Size(200, 20);
+            this.dateLainaus.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(583, 408);
+            this.Controls.Add(this.dateLainaus);
             this.Controls.Add(this.btnLisaa);
-            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tbKirja);
             this.Controls.Add(this.label3);
@@ -133,8 +134,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbKirja;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Button btnLisaa;
+        private System.Windows.Forms.DateTimePicker dateLainaus;
     }
 }
 

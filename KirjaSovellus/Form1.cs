@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace KirjaSovellus
 {
@@ -19,7 +20,31 @@ namespace KirjaSovellus
 
         private void btnLisaa_Click(object sender, EventArgs e)
         {
+            string conn = "Server=localhost;Database=kirjat;UID=root;password=''";
+            string vDate = DateTime.Parse(dateLainaus.Text).ToString("yyyy-MM-dd");
+            
 
+            try
+            {
+                string query = "INSERT INTO data(kirja_nimi, kirjailija_nimi, lainauspvm)" + 
+                    "VALUES('"+ this.tbKirja.Text + "','" + this.tbKirjailija.Text + "','" + vDate +  "')";
+
+                MySqlConnection con = new MySqlConnection(conn);
+                MySqlCommand comm = new MySqlCommand(query, con);
+                MySqlDataReader myReader;
+                con.Open();
+                myReader = comm.ExecuteReader();
+                MessageBox.Show("Tiedot tallennettu");
+                while (myReader.Read())
+                {
+
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
