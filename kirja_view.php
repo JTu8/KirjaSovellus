@@ -36,11 +36,13 @@
 			$lainauspvm = $rivi["lainauspvm"];
 			$palautuspvm = $rivi["palautuspvm"];
 			
+			$date = date("d.m.Y", strtotime($lainauspvm));
+			
 			echo '
 					<tr>
 						<td>',$kirja_nimi,'</td>
 						<td>',$kirjailija_nimi,'</td>
-						<td>',$lainauspvm,'</td>
+						<td>',$date,'</td>
 						<td>',$palautuspvm,'</td>
 					</tr>
 				 ';
