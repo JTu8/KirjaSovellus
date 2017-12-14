@@ -36,6 +36,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnLisaa = new System.Windows.Forms.Button();
             this.dateLainaus = new System.Windows.Forms.DateTimePicker();
+            this.btnNaytaKirjat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -91,7 +92,7 @@
             // 
             // btnLisaa
             // 
-            this.btnLisaa.Location = new System.Drawing.Point(234, 308);
+            this.btnLisaa.Location = new System.Drawing.Point(40, 310);
             this.btnLisaa.Name = "btnLisaa";
             this.btnLisaa.Size = new System.Drawing.Size(136, 48);
             this.btnLisaa.TabIndex = 7;
@@ -106,11 +107,22 @@
             this.dateLainaus.Size = new System.Drawing.Size(200, 20);
             this.dateLainaus.TabIndex = 8;
             // 
+            // btnNaytaKirjat
+            // 
+            this.btnNaytaKirjat.Location = new System.Drawing.Point(382, 310);
+            this.btnNaytaKirjat.Name = "btnNaytaKirjat";
+            this.btnNaytaKirjat.Size = new System.Drawing.Size(136, 48);
+            this.btnNaytaKirjat.TabIndex = 9;
+            this.btnNaytaKirjat.Text = "Näytä kirjat";
+            this.btnNaytaKirjat.UseVisualStyleBackColor = true;
+            this.btnNaytaKirjat.Click += new System.EventHandler(this.btnNaytaKirjat_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(583, 408);
+            this.Controls.Add(this.btnNaytaKirjat);
             this.Controls.Add(this.dateLainaus);
             this.Controls.Add(this.btnLisaa);
             this.Controls.Add(this.label4);
@@ -136,6 +148,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnLisaa;
         private System.Windows.Forms.DateTimePicker dateLainaus;
+        private System.Windows.Forms.Button btnNaytaKirjat;
     }
 }
 

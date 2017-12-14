@@ -46,5 +46,11 @@ namespace KirjaSovellus
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnNaytaKirjat_Click(object sender, EventArgs e)
+        {
+            NaytaKirjat n = new NaytaKirjat(this);
+            n.Show();
+        }
     }
 }
