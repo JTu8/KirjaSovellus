@@ -37,6 +37,8 @@
             this.btnLisaa = new System.Windows.Forms.Button();
             this.dateLainaus = new System.Windows.Forms.DateTimePicker();
             this.btnNaytaKirjat = new System.Windows.Forms.Button();
+            this.dateOsto = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -117,11 +119,29 @@
             this.btnNaytaKirjat.UseVisualStyleBackColor = true;
             this.btnNaytaKirjat.Click += new System.EventHandler(this.btnNaytaKirjat_Click);
             // 
+            // dateOsto
+            // 
+            this.dateOsto.Location = new System.Drawing.Point(40, 265);
+            this.dateOsto.Name = "dateOsto";
+            this.dateOsto.Size = new System.Drawing.Size(200, 20);
+            this.dateOsto.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(40, 246);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(117, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Osto/saantipäivämäärä";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(583, 408);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.dateOsto);
             this.Controls.Add(this.btnNaytaKirjat);
             this.Controls.Add(this.dateLainaus);
             this.Controls.Add(this.btnLisaa);
@@ -149,6 +169,8 @@
         private System.Windows.Forms.Button btnLisaa;
         private System.Windows.Forms.DateTimePicker dateLainaus;
         private System.Windows.Forms.Button btnNaytaKirjat;
+        private System.Windows.Forms.DateTimePicker dateOsto;
+        private System.Windows.Forms.Label label5;
     }
 }
 

@@ -22,12 +22,13 @@ namespace KirjaSovellus
         {
             string conn = "Server=localhost;Database=kirjat;UID=root;password=''";
             string vDate = DateTime.Parse(dateLainaus.Text).ToString("yyyy-MM-dd");
+            string oDate = DateTime.Parse(dateOsto.Text).ToString("yyyy-MM-dd");
             
 
             try
             {
-                string query = "INSERT INTO data(kirja_nimi, kirjailija_nimi, lainauspvm)" + 
-                    "VALUES('"+ this.tbKirja.Text + "','" + this.tbKirjailija.Text + "','" + vDate +  "')";
+                string query = "INSERT INTO data(kirja_nimi, kirjailija_nimi, lainauspvm, ostopvm)" + 
+                    "VALUES('"+ this.tbKirja.Text + "','" + this.tbKirjailija.Text + "','" + vDate + "','" + oDate +  "')";
 
                 MySqlConnection con = new MySqlConnection(conn);
                 MySqlCommand comm = new MySqlCommand(query, con);
@@ -45,6 +46,9 @@ namespace KirjaSovellus
             {
                 MessageBox.Show(ex.Message);
             }
+
+            tbKirja.Text = String.Empty;
+            tbKirjailija.Text = String.Empty;
         }
 
         private void btnNaytaKirjat_Click(object sender, EventArgs e)
