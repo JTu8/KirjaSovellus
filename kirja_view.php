@@ -25,6 +25,8 @@
 				<th>Kirja</th>
 				<th>Kirjailija</th>
 				<th>Lainauspäivämäärä</th>
+				<th>Osto/saantipäivämäärä</th>
+				<th>Lukemispäivämäärä</th>
 				<th>Palautuspäivämäärä</th>
 			  </tr>';
 		
@@ -34,17 +36,19 @@
 			$kirja_nimi = $rivi["kirja_nimi"];
 			$kirjailija_nimi = $rivi["kirjailija_nimi"];
 			$lainauspvm = $rivi["lainauspvm"];
+			$ostopvm = $rivi["ostopvm"];
+			$lukemispvm = $rivi["lukemispvm"];
 			$palautuspvm = $rivi["palautuspvm"];
 			
-			$lainausdate = date("d.m.Y", strtotime($lainauspvm));
-			$palautusdate = date("d.m.Y", strtotime($palautuspvm));
 			
 			echo '
 					<tr>
 						<td>',$kirja_nimi,'</td>
 						<td>',$kirjailija_nimi,'</td>
-						<td>',$lainausdate,'</td>
-						<td>',$palautusdate,'</td>
+						<td>',($lainauspvm ? date("d.m.Y", strtotime($lainauspvm)) : ""),'</td>
+						<td>',($ostopvm ? date("d.m.Y", strtotime($ostopvm)) : ""),'</td>
+						<td>',($lukemispvm ? date("d.m.Y", strtotime($lukemispvm)) : ""),'</td>
+						<td>',($palautuspvm ? date("d.m.Y", strtotime($palautuspvm)) : ""),'</td>
 					</tr>
 				 ';
 		}
@@ -59,5 +63,5 @@
 	$result = mysqli_query($conn, $sql);
 	$row = mysqli_fetch_array($result);
 	
-	echo 'Kirjoja luettu yhteensä: ' . $row[0];
+	echo 'Kirjoja lainattu, ostettu tai saatu yhteensä: ' . $row[0];
 ?>
