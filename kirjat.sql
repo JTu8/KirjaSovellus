@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 25.11.2017 klo 14:56
+-- Generation Time: 03.01.2018 klo 14:41
 -- Palvelimen versio: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -31,8 +31,14 @@ CREATE TABLE `data` (
   `kirja_nimi` varchar(50) DEFAULT NULL,
   `kirjailija_nimi` varchar(50) DEFAULT NULL,
   `lainauspvm` date DEFAULT NULL,
+  `ostopvm` date DEFAULT NULL,
+  `lukemispvm` date DEFAULT NULL,
   `palautuspvm` date DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Vedos taulusta `data`
+--
 
 --
 -- Indexes for dumped tables
@@ -52,7 +58,7 @@ ALTER TABLE `data`
 -- AUTO_INCREMENT for table `data`
 --
 ALTER TABLE `data`
-  MODIFY `ID` bigint(50) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` bigint(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
