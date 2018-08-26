@@ -26,15 +26,23 @@ namespace KirjaSovellus
         {
             string connString = "Server=localhost;Database=kirjat;UID=root;password=''";
 
-            string query = "SELECT * FROM data";
-            using (MySqlConnection conn = new MySqlConnection(connString))
-            {
-                using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn))
+            try { 
+
+                string query = "SELECT * FROM data";
+                using (MySqlConnection conn = new MySqlConnection(connString))
                 {
-                    DataSet ds = new DataSet();
-                    adapter.Fill(ds);
-                    dgShowKirjat.DataSource = ds.Tables[0];
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn))
+                    {
+                        DataSet ds = new DataSet();
+                        adapter.Fill(ds);
+                        dgShowKirjat.DataSource = ds.Tables[0];
+                    }
                 }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Virhe");
             }
 
         }
