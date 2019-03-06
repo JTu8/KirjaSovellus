@@ -9,9 +9,36 @@
 	<body>
 		<h1><center>Kirjasi</center></h1>
 	</body>
+	
+        Valitse vuoden mukaan<select name="yearselect" id="yearselect">
+            <option value="kaikki">Kaikki</option>
+        </select>
+	
+	<script>
+        $(document).ready(function() {
+            console.log('test');
+            for(i = new Date().getFullYear(); i > 2016; i--) {
+                $('#yearselect').append($('<option />').val(i).html(i));
+               
+        }
+            $('#yearselect').change(function() {
+                var selected = $('#yearselect option:selected').val();
+                console.log(selected);
+                //alert(selected);    
+            });
+            
+        });
+        
+    </script>
 </html>
 <?php
 	require_once("db.inc");
+	echo "test1";
+	if(null !== ($_POST['submit'])) {
+		echo "test2";
+		$yearselect = $_POST['yearselect'];
+		echo $yearselect;
+	}
 	
 	$query = "SELECT * FROM data";
 	
@@ -62,6 +89,23 @@
 	$sql = "SELECT COUNT(kirja_nimi) FROM data";
 	$result = mysqli_query($conn, $sql);
 	$row = mysqli_fetch_array($result);
+
+	$getYear = "SELECT COUNT(lukemispvm) FROM data WHERE YEAR(lukemispvm)=2017";
+	$yearResult = mysqli_query($conn, $getYear);
+	$yearRow = mysqli_fetch_array($yearResult);
+
+	$getYear2 = "SELECT COUNT(lukemispvm) FROM data WHERE YEAR(lukemispvm)=2018";
+	$yearResult2 = mysqli_query($conn, $getYear2);
+	$yearRow2 = mysqli_fetch_array($yearResult2);
+
+	$getYear3 = "SELECT COUNT(lukemispvm) FROM data WHERE YEAR(lukemispvm)=2019";
+	$yearResult3 = mysqli_query($conn, $getYear3);
+	$yearRow3 = mysqli_fetch_array($yearResult3);
+
 	
-	echo 'Kirjoja lainattu, ostettu tai saatu yhteensä: ' . $row[0];
+	echo 'Kirjoja lainattu, ostettu tai saatu yhteensä: ' . $row[0]. ' kpl.<br>';
+	echo 'Kirjoja luettu vuoden 2017 aikana ' .$yearRow[0]. ' kpl.<br>';
+	echo 'Kirjoja luettu vuoden 2018 aikana ' .$yearRow2[0]. ' kpl.<br>';
+	echo 'Kirjoja luettu vuoden 2019 aikana ' .$yearRow3[0]. ' kpl.<br>';
+
 ?>
