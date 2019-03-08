@@ -1,17 +1,41 @@
-E:/C#_projektit/KirjaSovellus/KirjaSovellus/bin/Debug/KirjaSovellus.exe.config
-E:/C#_projektit/KirjaSovellus/KirjaSovellus/bin/Debug/KirjaSovellus.exe
-E:/C#_projektit/KirjaSovellus/KirjaSovellus/bin/Debug/KirjaSovellus.pdb
-E:/C#_projektit/KirjaSovellus/KirjaSovellus/obj/Debug/KirjaSovellus.csprojResolveAssemblyReference.cache
-E:/C#_projektit/KirjaSovellus/KirjaSovellus/obj/Debug/KirjaSovellus.Form1.resources
-E:/C#_projektit/KirjaSovellus/KirjaSovellus/obj/Debug/KirjaSovellus.Properties.Resources.resources
-E:/C#_projektit/KirjaSovellus/KirjaSovellus/obj/Debug/KirjaSovellus.csproj.GenerateResource.Cache
-E:/C#_projektit/KirjaSovellus/KirjaSovellus/obj/Debug/KirjaSovellus.csproj.CoreCompileInputs.cache
-E:/C#_projektit/KirjaSovellus/KirjaSovellus/obj/Debug/KirjaSovellus.exe
-E:/C#_projektit/KirjaSovellus/KirjaSovellus/obj/Debug/KirjaSovellus.pdb
-/Users/jere/Documents/Projektit/BookClub/BookClubV1.0/KirjaSovellus/KirjaSovellus/obj/Debug/KirjaSovellus.csprojAssemblyReference.cache
-/Users/jere/Documents/Projektit/BookClub/BookClubV1.0/KirjaSovellus/KirjaSovellus/obj/Debug/KirjaSovellus.Form1.resources
-/Users/jere/Documents/Projektit/BookClub/BookClubV1.0/KirjaSovellus/KirjaSovellus/obj/Debug/KirjaSovellus.Properties.Resources.resources
-/Users/jere/Documents/Projektit/BookClub/BookClubV1.0/KirjaSovellus/KirjaSovellus/obj/Debug/KirjaSovellus.csproj.GenerateResource.cache
-/Users/jere/Documents/Projektit/BookClub/BookClubV1.0/KirjaSovellus/KirjaSovellus/obj/Debug/KirjaSovellus.csproj.CoreCompileInputs.cache
-/Users/jere/Documents/Projektit/BookClub/BookClubV1.0/KirjaSovellus/KirjaSovellus/obj/Debug/KirjaSovellus.exe
-/Users/jere/Documents/Projektit/BookClub/BookClubV1.0/KirjaSovellus/KirjaSovellus/obj/Debug/KirjaSovellus.pdb
+E:\C#_projektit\KirjaSovellus\KirjaSovellus\bin\Debug\KirjaSovellus.exe.config
+E:\C#_projektit\KirjaSovellus\KirjaSovellus\bin\Debug\KirjaSovellus.exe
+E:\C#_projektit\KirjaSovellus\KirjaSovellus\bin\Debug\KirjaSovellus.pdb
+E:\C#_projektit\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.csprojResolveAssemblyReference.cache
+E:\C#_projektit\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.Form1.resources
+E:\C#_projektit\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.Properties.Resources.resources
+E:\C#_projektit\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.csproj.GenerateResource.Cache
+E:\C#_projektit\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.csproj.CoreCompileInputs.cache
+E:\C#_projektit\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.exe
+E:\C#_projektit\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.pdb
+E:\C#_projektit\KirjaSovellus\KirjaSovellus\bin\Debug\MySql.Data.dll
+E:\C#_projektit\KirjaSovellus\KirjaSovellus\bin\Debug\MySql.Data.xml
+E:\C#_projektit\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.NaytaKirjat.resources
+E:\Projektit\BookApp\KirjaSovellus\KirjaSovellus\bin\Debug\KirjaSovellus.exe.config
+E:\Projektit\BookApp\KirjaSovellus\KirjaSovellus\bin\Debug\KirjaSovellus.exe
+E:\Projektit\BookApp\KirjaSovellus\KirjaSovellus\bin\Debug\KirjaSovellus.pdb
+E:\Projektit\BookApp\KirjaSovellus\KirjaSovellus\bin\Debug\MySql.Data.dll
+E:\Projektit\BookApp\KirjaSovellus\KirjaSovellus\bin\Debug\MySql.Data.xml
+E:\Projektit\BookApp\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.csprojAssemblyReference.cache
+E:\Projektit\BookApp\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.Form1.resources
+E:\Projektit\BookApp\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.NaytaKirjat.resources
+E:\Projektit\BookApp\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.Properties.Resources.resources
+E:\Projektit\BookApp\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.csproj.GenerateResource.cache
+E:\Projektit\BookApp\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.csproj.CoreCompileInputs.cache
+E:\Projektit\BookApp\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.csproj.CopyComplete
+E:\Projektit\BookApp\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.exe
+E:\Projektit\BookApp\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.pdb
+E:\Projektit\Book Club\KirjaSovellus\KirjaSovellus\bin\Debug\KirjaSovellus.exe.config
+E:\Projektit\Book Club\KirjaSovellus\KirjaSovellus\bin\Debug\KirjaSovellus.exe
+E:\Projektit\Book Club\KirjaSovellus\KirjaSovellus\bin\Debug\KirjaSovellus.pdb
+E:\Projektit\Book Club\KirjaSovellus\KirjaSovellus\bin\Debug\MySql.Data.dll
+E:\Projektit\Book Club\KirjaSovellus\KirjaSovellus\bin\Debug\MySql.Data.xml
+E:\Projektit\Book Club\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.csprojAssemblyReference.cache
+E:\Projektit\Book Club\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.Form1.resources
+E:\Projektit\Book Club\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.NaytaKirjat.resources
+E:\Projektit\Book Club\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.Properties.Resources.resources
+E:\Projektit\Book Club\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.csproj.GenerateResource.cache
+E:\Projektit\Book Club\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.csproj.CoreCompileInputs.cache
+E:\Projektit\Book Club\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.csproj.CopyComplete
+E:\Projektit\Book Club\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.exe
+E:\Projektit\Book Club\KirjaSovellus\KirjaSovellus\obj\Debug\KirjaSovellus.pdb

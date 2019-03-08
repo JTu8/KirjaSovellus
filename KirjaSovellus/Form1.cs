@@ -23,32 +23,42 @@ namespace KirjaSovellus
             string conn = "Server=localhost;Database=kirjat;UID=root;password=''";
             string vDate = DateTime.Parse(dateLainaus.Text).ToString("yyyy-MM-dd");
             string oDate = DateTime.Parse(dateOsto.Text).ToString("yyyy-MM-dd");
-            
 
-            try
+
+            if (string.IsNullOrWhiteSpace(tbKirja.Text) && string.IsNullOrWhiteSpace(tbKirjailija.Text))
             {
-                string query = "INSERT INTO data(kirja_nimi, kirjailija_nimi, lainauspvm, ostopvm)" + 
-                    "VALUES('"+ this.tbKirja.Text + "','" + this.tbKirjailija.Text + "','" + vDate + "','" + oDate +  "')";
-
-                MySqlConnection con = new MySqlConnection(conn);
-                MySqlCommand comm = new MySqlCommand(query, con);
-                MySqlDataReader myReader;
-                con.Open();
-                myReader = comm.ExecuteReader();
-                MessageBox.Show("Tiedot tallennettu");
-                while (myReader.Read())
+                MessageBox.Show("Kirja ja/tai kirjailija kenttä tyhjä");
+            }
+            else
+            {
+                try
                 {
 
+                    string query = "INSERT INTO data(kirja_nimi, kirjailija_nimi, lainauspvm, ostopvm)" +
+                        "VALUES('" + this.tbKirja.Text + "','" + this.tbKirjailija.Text + "','" + vDate + "','" + oDate + "')";
+
+                    MySqlConnection con = new MySqlConnection(conn);
+                    MySqlCommand comm = new MySqlCommand(query, con);
+                    MySqlDataReader myReader;
+                    con.Open();
+                    myReader = comm.ExecuteReader();
+                    MessageBox.Show("Tiedot tallennettu");
+                    while (myReader.Read())
+                    {
+
+                    }
+                    con.Close();
                 }
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Virhe");
+                }
+
+                tbKirja.Text = String.Empty;
+                tbKirjailija.Text = String.Empty;
             }
 
-            tbKirja.Text = String.Empty;
-            tbKirjailija.Text = String.Empty;
+            
         }
 
         private void btnNaytaKirjat_Click(object sender, EventArgs e)

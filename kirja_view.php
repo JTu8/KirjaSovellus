@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<title>Luetut kirjat</title>
@@ -10,7 +11,7 @@
 		<h1><center>Kirjasi</center></h1>
 	</body>
 	
-        Valitse vuoden mukaan<select name="yearselect" id="yearselect">
+        Valitse vuoden mukaan: <select name="yearselect" id="yearselect">
             <option value="kaikki">Kaikki</option>
         </select>
 	
@@ -34,11 +35,13 @@
 <?php
 	require_once("db.inc");
 	echo "test1";
+	/*
 	if(null !== ($_POST['submit'])) {
 		echo "test2";
 		$yearselect = $_POST['yearselect'];
 		echo $yearselect;
 	}
+	*/
 	
 	$query = "SELECT * FROM data";
 	
